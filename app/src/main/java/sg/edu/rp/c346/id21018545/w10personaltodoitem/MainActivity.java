@@ -5,11 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Iterator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,13 +24,13 @@ public class MainActivity extends AppCompatActivity {
         alAndroidVersions = new ArrayList<>();
 
         Calendar c1 = Calendar.getInstance();
-        c1.set(2022, 2 , 15);
+        c1.set(2023, 6 , 20);
 
         Calendar c2 = Calendar.getInstance();
-        c2.set(2022, 2 , 13);
+        c2.set(2023,6 , 21);
 
         Calendar c3 = Calendar.getInstance();
-        c3.set(2022, 2 , 11);
+        c3.set(2023, 6, 22);
 
 
         ToDoItem item1 = new ToDoItem("Go to school", c1);

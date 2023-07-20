@@ -29,37 +29,33 @@ public class ToDoItem implements Serializable {
 
         this.date = date;
     }
+
     public String toString() {
-        String str = title + "\n" + date.get(Calendar.DAY_OF_MONTH)+"/"+date.get(Calendar.MONTH)
-                +"/"+date.get(Calendar.YEAR) + " (" + getDay(date.get(Calendar.DAY_OF_WEEK)) + ")";
+        String str = title + "\n" + date.get(Calendar.DAY_OF_MONTH) + "/" + date.get(Calendar.MONTH)
+                + "/" + date.get(Calendar.YEAR) + " (" + getDay(date.get(Calendar.DAY_OF_WEEK)) + ")";
 
         return str;
     }
-
     private String getDay(int day) {
 
         // Complete the code here
-        if (day == 0){
+        if (date.get(Calendar.DAY_OF_WEEK)==1){
             return "Sunday";
-        }
-        if (day == 1) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==2){
             return "Monday";
-        }
-        if (day == 2) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==3){
             return "Tuesday";
-        }
-        if (day == 3) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==4){
             return "Wednesday";
-        }
-        if (day == 4) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==5){
             return "Thursday";
-        }
-        if (day == 5) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==6){
             return "Friday";
-        }
-        if (day == 6) {
+        }if (date.get(Calendar.DAY_OF_WEEK)==7) {
             return "Saturday";
         }
         return null;
     }
+
+
 }
